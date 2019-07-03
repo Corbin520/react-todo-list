@@ -3,10 +3,10 @@ import React from "react"
 function Cards(props) {
 
     // function that will be changing "completed"
-    function handleClick() {
-        console.log("handling click")
-        props.todo.completed : !props.todo.completed;
-    }
+    // function handleClick() {
+    //     console.log("handling click")
+    //     props.todo.completed : !props.todo.completed;
+    // }
 
     return (
         <div>
@@ -18,7 +18,7 @@ function Cards(props) {
                     <div className="card-body">
                         <h5 className="card-title">{todo.text}</h5>
                         <p className="card-text"></p>
-                        <a href="#" className="btn btn-primary" onClick={handleClick}>
+                        <a href="#" className="btn btn-primary">
                             
                         {/* When clicked, change it to the opposite */}
                         {todo.completed ? "Working on it" : "Done"}</a>
